@@ -23,7 +23,7 @@ load_dotenv(os.path.join(BASE_DIR, "../.env"))
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv("SECRET_KEY")
+SECRET_KEY ='7k9$k8u)vral9#uml&v&9$0nj+=g%pq#(0tyqgv4&53xha@b5d'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -88,14 +88,14 @@ WSGI_APPLICATION = 'todo_project.wsgi.application'
 #         'PORT': os.getenv('DB_PORT'),
 #     }
 # }
-if not DEBUG:
-    DATABASES = {'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))}
-else:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': 'db.sqlite3',
-        }}
+# if not DEBUG:
+#     DATABASES = {'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))}
+# else:
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'db.sqlite3',
+    }}
 
 
 # Password validation
