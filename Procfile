@@ -1,1 +1,1 @@
-web: gunicorn orders.wsgi
+gunicorn orders.wsgi:application
