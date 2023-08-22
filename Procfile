@@ -1,1 +1,1 @@
-web: gunicorn sales.wsgi
+web: gunicorn orders.wsgi
